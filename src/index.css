@@ -1,0 +1,284 @@
+@tailwind base;
+
+@tailwind components;
+
+@tailwind utilities;
+
+@import url('https://fonts.cdnfonts.com/css/itc-avant-garde-gothic-std-book');
+@import url('https://fonts.cdnfonts.com/css/avenir');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html,body{
+    width: 100vw;
+}
+h1{
+/* font-family: 'ITC Avant Garde Gothic Pro'; */
+font-family: 'ITC Avant Garde Gothic Std Bold', sans-serif;
+font-style: normal;
+font-weight: 700;
+font-size: 32px;
+line-height: 38px;
+}
+p{
+font-family: 'Avenir', sans-serif;
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+color: #666666;
+line-height: 25px;
+width: 432px;
+height: 52px;
+}
+button{
+    width: 146px;
+    height: 17px;
+    font-family: 'Avenir', sans-serif;
+    color: #000000;
+font-style: normal;
+font-weight: 900;
+font-size: 12.8px;
+line-height: 17px;
+}
+
+.scroll{
+  min-width: 906px;
+  height: 363px;
+  /* min-width: 520px; */
+  /* min-height: 500px; */
+  margin-top: 68px;
+  /* margin-left: 100px; */
+  /* padding-left: 100px; */
+  display: flex;
+  position: relative;
+}
+/* .products{
+  position: absolute;
+  left: 100px;
+} */
+
+/* .slider{ */
+  /* display: flex; */
+/* } */
+
+.product{
+  min-width: 230px;
+  /* margin-left: 32px; */
+  /* min-height: 310px; */
+}
+
+.first{
+  position: absolute;
+  left: 100px;
+}
+
+.second{
+  position: absolute;
+  left: 360px;
+}
+
+.third{
+  margin-left: -6px;
+}
+
+.slick-list img{
+  height: 310px;
+  z-index: 10;
+}
+.product p {
+  width: 150px;
+  font-family: 'Avenir';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12.8px;
+  margin: 0;
+}
+
+button.slick-arrow.slick-prev::before {
+  color: transparent;
+  position: absolute;
+  transform: translateX(-20px);
+}
+
+button.slick-arrow.slick-next::before {
+  color: black;
+  font-size: 1.5rem;
+  transform: translate(-40px,-35px);
+  z-index: 1;
+  position: absolute;
+}
+
+.price {
+  /* width: 150px; */
+  display: flex;
+  flex-direction: row;
+  font-family: 'Avenir';
+}
+
+.checkboxes {
+  display: block;
+}
+
+#green {
+  accent-color: #99C3CC;
+  margin-right: 8px;
+}
+
+#red {
+  accent-color: #CC9999;
+  margin-right: 8px;
+}
+
+#yellow {
+  accent-color: #CB99CC;
+  margin-right: 8px;
+}
+
+#blue {
+  accent-color: #A6CC99;
+}
+
+input[type="radio"] {
+  cursor: pointer;
+}
+
+#green[type='radio']:after {
+  width: 15px;
+  height: 15px;
+  border-radius: 15px;
+  top: -2px;
+  left: -1px;
+  position: relative;
+  background-color: #99C3CC;
+  content: '';
+  display: inline-block;
+  visibility: visible;
+  border: 2px solid white;
+}
+
+#green[type='radio']:checked:after {
+  display: none;
+}
+
+#red[type='radio']:after {
+  width: 15px;
+  height: 15px;
+  border-radius: 15px;
+  top: -2px;
+  left: -1px;
+  position: relative;
+  background-color: #CC9999;
+  content: '';
+  display: inline-block;
+  visibility: visible;
+  border: 2px solid white;
+}
+
+#red[type='radio']:checked:after {
+  display: none;
+}
+
+#yellow[type='radio']:after {
+  width: 15px;
+  height: 15px;
+  border-radius: 15px;
+  top: -2px;
+  left: -1px;
+  position: relative;
+  background-color: #CB99CC;
+  content: '';
+  display: inline-block;
+  visibility: visible;
+  border: 2px solid white;
+}
+
+#yellow[type='radio']:checked:after {
+  display: none;
+}
+
+#blue[type='radio']:after {
+  width: 15px;
+  height: 15px;
+  border-radius: 15px;
+  top: -2px;
+  left: -1px;
+  position: relative;
+  background-color: #A6CC99;
+  content: '';
+  display: inline-block;
+  visibility: visible;
+  border: 2px solid white;
+}
+
+#blue[type='radio']:checked:after {
+  display: none;
+}
+
+
+@media (max-width:1024px) {
+.image{
+    position: relative;
+}
+.title{
+    position: absolute;
+    margin-top: -280px;
+    left: 24px;
+/* top: 248px; */
+}
+.product{
+      max-width: 148px;
+    }
+.title h1{
+    min-width: 312px;
+min-height: 78px;
+font-weight: 700;
+font-size: 32px;
+color: #fff;
+}
+.title button{
+    min-width: 146px;
+min-height: 17px;
+font-weight: 900;
+font-size: 12.8px;
+line-height: 130%;
+color: #fff;
+margin-top: 16px;
+}
+
+}
+
+@media (max-width:640px){
+    .title{
+        margin-top: -200px;
+      margin-right: auto;
+      margin-left: auto;
+    }
+    .title h1{
+        font-size: 20px;
+    }
+    .scroll{
+      min-width: 516px;
+  height: 293px;
+  margin-top: -50px;
+    }
+    .product{
+      max-width: 148px;
+      height: 200px;
+    }
+    .first{
+      position: absolute;
+      left: 24px;
+    }
+    .second{
+      position: absolute;
+      left: 184px;
+    }
+    .third{
+      margin-left: -11px;
+    }
+    
+}
