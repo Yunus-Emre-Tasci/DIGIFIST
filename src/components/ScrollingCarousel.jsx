@@ -5,8 +5,6 @@ import card3 from "../assests/images/card3.png";
 
 export default function ScrollingCarousel() {
   
-  
-
     const settings = {
       dots: false,
       infinite: false,
@@ -70,7 +68,6 @@ export default function ScrollingCarousel() {
           </div>
         </div>
       </Slider>
-      // </div>
     );
 
 }

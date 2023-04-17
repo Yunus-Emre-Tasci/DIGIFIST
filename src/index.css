@@ -17,7 +17,6 @@ html,body{
     width: 100vw;
 }
 h1{
-/* font-family: 'ITC Avant Garde Gothic Pro'; */
 font-family: 'ITC Avant Garde Gothic Std Bold', sans-serif;
 font-style: normal;
 font-weight: 700;
@@ -48,27 +47,13 @@ line-height: 17px;
 .scroll{
   min-width: 906px;
   height: 363px;
-  /* min-width: 520px; */
-  /* min-height: 500px; */
   margin-top: 68px;
-  /* margin-left: 100px; */
-  /* padding-left: 100px; */
   display: flex;
   position: relative;
 }
-/* .products{
-  position: absolute;
-  left: 100px;
-} */
-
-/* .slider{ */
-  /* display: flex; */
-/* } */
 
 .product{
   min-width: 230px;
-  /* margin-left: 32px; */
-  /* min-height: 310px; */
 }
 
 .first{
@@ -113,7 +98,6 @@ button.slick-arrow.slick-next::before {
 }
 
 .price {
-  /* width: 150px; */
   display: flex;
   flex-direction: row;
   font-family: 'Avenir';
@@ -227,7 +211,6 @@ input[type="radio"] {
     position: absolute;
     margin-top: -280px;
     left: 24px;
-/* top: 248px; */
 }
 .product{
       max-width: 148px;
